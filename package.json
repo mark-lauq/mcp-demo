@@ -1,0 +1,29 @@
+{
+  "name": "mcp-demo",
+  "version": "1.0.0",
+  "description": "MCP demo",
+  "scripts": {
+    "start": "export $(cat .env | xargs) && tsx ./src/index.ts",
+    "start:server": "tsx ./src/server.ts"
+  },
+  "keywords": [
+    "AI",
+    "MCP"
+  ],
+  "author": {
+    "email": "mark.lauq@gmail.com",
+    "name": "Mark LauQ"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.2",
+    "axios": "^1.9.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
